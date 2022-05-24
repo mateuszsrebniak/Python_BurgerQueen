@@ -22,7 +22,9 @@ imię = input('Jak masz na imię? ')
 print()
 print('Cześć', imię, '!')
 
-while True:
+koniec = True
+
+while koniec == True:
     print()
     print('0. Zakończ')
     print('1. Burger Queen Opole')
@@ -37,7 +39,7 @@ while True:
         break
     if restauracja == 1:
         print('Twoja restauracja to Burger Queen Opole')
-        while True:
+        while koniec == True:
             print()
             print('0. Powrót do wyboru restauracji')
             print('1. Burgery')
@@ -141,6 +143,8 @@ while True:
                     if platnosc == 0:
                         break
                     if platnosc == 1:
+                        print('KONIEC')
+                        koniec = False
                         break
 
     if restauracja == 2:
